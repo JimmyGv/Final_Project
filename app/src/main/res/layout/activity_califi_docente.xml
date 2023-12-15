@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_califi_docente">
+
+    <ImageView
+        android:id="@+id/ivCalifDocLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+    <TextView
+        android:id="@+id/tvTextCalifDocUser"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calificaciones"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCalifDocLogo"
+        />
+
+
+    <TextView
+        android:id="@+id/tvCalifDocTrimestre"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Trimestre: "
+        app:layout_constraintStart_toStartOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/tvTextCalifDocUser"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCalifDocTrim"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/tvTextCalifDocUser"
+
+        />
+
+    <TextView
+        android:id="@+id/tvCalifDocMateria"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Materia: "
+        app:layout_constraintStart_toStartOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/tvCalifDocTrimestre"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCalifDocMat"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCalifDocTrim"
+
+        />
+
+    <TextView
+        android:id="@+id/tvCalifDocAlumno"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Alumno: "
+        app:layout_constraintStart_toStartOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/tvCalifDocMateria"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCalifDocAlumno"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCalifDocMat"
+
+        />
+    <Button
+        android:id="@+id/buttonCalifDocRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/btn_regresar"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buttonCalifDocCalif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Calificiones"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <EditText
+        android:id="@+id/etCalifDocAsist"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:hint="Asistencia"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCalifDocRubro"
+        android:drawableStart="@drawable/vector_cupo"
+        />
+
+    <EditText
+        android:id="@+id/etCalifDocExamen"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:hint="Examen"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCalifDocAsist"
+        android:drawableStart="@drawable/vector_cupo"
+        />
+
+    <EditText
+        android:id="@+id/etCalifDocTrabajos"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:hint="Trabajos"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCalifDocValores"
+        android:drawableStart="@drawable/vector_cupo"
+        />
+
+    <EditText
+        android:id="@+id/etCalifDocValores"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:layout_marginStart="12dp"
+        android:hint="Valores"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalifDocRubro"
+        android:drawableStart="@drawable/vector_cupo"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tvCalifDocRubro"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Rubro para Calificar: "
+        app:layout_constraintStart_toStartOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/tvCalifDocAlumno"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCalifDocRubro"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/buttonCalifDocSave"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCalifDocAlumno"
+
+        />
+
+
+    <Button
+        android:id="@+id/buttonCalifDocSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginBottom="50dp"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

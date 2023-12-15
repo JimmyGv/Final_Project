@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_modify_students">
+
+    <ImageView
+        android:id="@+id/ivModifyStudLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/tvTextModifyStudents"
+        android:layout_width="0dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_enter"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivModifyStudLogo"
+        />
+
+    <TextView
+        android:id="@+id/tvTextModifyStudentsMod"
+        android:layout_width="0dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"
+        android:text="Modificar Alumnos"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserModifyStudent"
+        />
+
+    <TextView
+        android:id="@+id/tvUserModifyStudent"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_margin="12dp"
+        android:text="Usuario: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextModifyStudents"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModifyStUser"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextModifyStudents"
+
+        />
+
+    <EditText
+        android:id="@+id/etModifyStParent1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextModifyStudentsMod"
+        android:hint="@string/hint_Parent1"
+        android:drawableStart="@drawable/vector_mother"
+        />
+
+    <EditText
+        android:id="@+id/etModifyStParent2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyStParent1"
+        android:hint="@string/hint_Parent2"
+        android:drawableStart="@drawable/vector_father"
+        />
+
+    <EditText
+        android:id="@+id/etModifyStPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyStParent2"
+        android:hint="@string/hint_Phone"
+        android:drawableStart="@drawable/vector_phone"
+        />
+
+    <EditText
+        android:id="@+id/etModifyStPhone2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyStPhone"
+        android:hint="@string/hint_Phone2"
+        android:drawableStart="@drawable/vector_phone"
+        />
+
+    <EditText
+        android:id="@+id/etModifyStCurp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyStPhone2"
+        android:hint="@string/hint_Curp"
+        android:drawableStart="@drawable/vector_curp"
+        />
+
+    <Button
+        android:id="@+id/btnModifyStudentsRegresar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnModifyStudentsCreate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnModifyStudents"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnModifyStudentsElim"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

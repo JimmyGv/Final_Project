@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">App_Proyect</string>
+    <string name="hint_usuario">Usuarios</string>
+    <string name="hint_usuarioAdd">Nombre de Usuario</string>
+    <string name="hint_usuarioMail">Email de Usuario</string>
+    <string name="hint_porcentaje">porcentaje</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_especialidad">Especialidad</string>
+    <string name="hint_estudios">Estudios Alcanzados</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_calif">Calificaciones</string>
+    <string name="btn_materia">Materias</string>
+    <string name="text_enter">Bienvenido al SIESTV</string>
+    <string name="user_enter">Usuario: Jaime</string>
+    <string name="btn_informacion">Cambiar Contrasena</string>
+    <string name="btn_sesion">Cerrar sesion</string>
+    <string name="btn_alumnos">Alumnos </string>
+    <string name="text_nombreAlumnos">Nombre del alumno: </string>
+    <string name="text_nombre">Juan Gonzalez </string>
+    <string name="btn_rubros">Rubros</string>
+    <string name="tvText_doc">Nombre del Docente</string>
+    <string name="tvText_doc1">Grupo a cargo</string>
+    <string name="tvText_doc2">Especialidad</string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="btn_Agregar">Solicitar Registro</string>
+    <string name="btn_AgregarDocAl">Agregar </string>
+    <string name="hint_Parent1">Nombre de la Madre </string>
+    <string name="hint_Parent2"> Nombre del Padre </string>
+    <string name="hint_Phone"> Numero telefonico </string>
+    <string name="hint_Phone2"> Numero telefonico (opcional) </string>
+    <string name="hint_Curp"> Curp del alumno </string>
+    <string name="btn_sesionStudents"> Iniciar Sesion Alumnos </string>
+    <string name="btn_sesionTeachers"> Iniciar Sesion Docentes </string>
+    <string name="btn_sesionAdmin"> Iniciar Sesion Administrador </string>
+    <string name="btn_Grupos"> Grupos </string>
+    <string name="btn_Aulas"> Aulas </string>
+    <string name="btn_Docentes"> Docentes </string>
+    <string name="title_activity_modify_group">activity_modify_group</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string-array name="trimestre_grado">
+        <item>Primero</item>
+        <item>Segundo</item>
+        <item>Tercero</item>
+    </string-array>
+
+    <string-array name="user_type">
+        <item>Alumno</item>
+        <item>Docente</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <string-array name="user_estatus">
+        <item>A</item>
+        <item>I</item>
+    </string-array>
+</resources>

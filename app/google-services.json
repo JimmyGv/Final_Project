@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "675157936358",
+    "firebase_url": "https://bdescuela-ce26b-default-rtdb.firebaseio.com",
+    "project_id": "bdescuela-ce26b",
+    "storage_bucket": "bdescuela-ce26b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675157936358:android:474f4d9ce46c537aebd327",
+        "android_client_info": {
+          "package_name": "com.example.app_proyect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqvG0FlNh1XXnomJZdy-2Cj0zlAd9pvSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

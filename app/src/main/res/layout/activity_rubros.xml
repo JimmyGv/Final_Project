@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_rubros">
+
+    <ImageView
+        android:id="@+id/ivRubroLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/tvTextRubro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear Rubro"
+        android:layout_margin="12dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivRubroLogo"
+        />
+
+    <TextView
+        android:id="@+id/tvTrimestre"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="12dp"
+        android:text="Trimestre: "
+        app:layout_constraintStart_toStartOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@id/tvTextRubro"
+        />
+
+    <EditText
+        android:id="@+id/etAsist"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        app:layout_constraintEnd_toEndOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRubros"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <EditText
+        android:id="@+id/etTest"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        app:layout_constraintEnd_toEndOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/etClassWork"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <EditText
+        android:id="@+id/etClassWork"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        app:layout_constraintEnd_toEndOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/etAsist"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <EditText
+        android:id="@+id/etValores"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        app:layout_constraintEnd_toEndOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@+id/etTest"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <Button
+        android:id="@+id/btnRubroRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerRubros"
+        android:layout_width="180dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@id/tvTextRubro"
+
+        />
+
+    <TextView
+        android:id="@+id/tvAsistencia"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="50dp"
+        android:text="Porcentaje Asistencia: "
+        app:layout_constraintStart_toStartOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@id/tvTrimestre"
+        />
+
+    <TextView
+        android:id="@+id/tvTrabajos"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="50dp"
+        android:text="Porcentaje Trabajos: "
+        app:layout_constraintStart_toStartOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@id/tvAsistencia"
+        />
+
+    <TextView
+        android:id="@+id/tvExamen"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="50dp"
+        android:text="Porcentaje Examen: "
+        app:layout_constraintStart_toStartOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@id/tvTrabajos"
+        />
+
+    <TextView
+        android:id="@+id/tvValores"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="50dp"
+        android:text="Porcentaje Valores: "
+        app:layout_constraintStart_toStartOf="@id/btnRubroRegresar"
+        app:layout_constraintTop_toBottomOf="@id/tvExamen"
+        />
+
+    <EditText
+        android:id="@+id/etRubroName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvValores"
+        android:drawableStart="@drawable/vector_rubro"
+        />
+
+    <Button
+        android:id="@+id/btnRubroSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

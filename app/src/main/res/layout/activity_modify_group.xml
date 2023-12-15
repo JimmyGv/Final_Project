@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_modify_group">
+
+    <ImageView
+        android:id="@+id/ivModifyGroupLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/tvModifyGrDoc"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:text="Docente: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivModifyGroupLogo"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModifyGrDoc"
+        android:layout_width="180dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivModifyGroupLogo"
+
+        />
+
+    <EditText
+        android:id="@+id/etNameModifyGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerModifyGrDoc"
+        android:hint="Nombre del grupo"
+        android:drawableStart="@drawable/vector_group"
+        />
+
+    <EditText
+        android:id="@+id/etCupoModifyGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNameModifyGroup"
+        android:hint="Cupo del Grupo"
+        android:drawableStart="@drawable/vector_cupo"
+        />
+
+    <TextView
+        android:id="@+id/tvModifyGrAula"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Aula: "
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCupoModifyGroup"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModifyGrAula"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCupoModifyGroup"
+
+        />
+
+    <TextView
+        android:id="@+id/tvCrModifyGrade"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:text="Grado: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyGrAula"
+        />
+
+    <TextView
+        android:id="@+id/tvCreatedGroups"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Grupos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCrModifyGrade"
+        />
+
+    <ListView
+        android:id="@+id/listVerGroups"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreatedGroups"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModifyGrGrade"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerModifyGrAula"
+
+        />
+
+    <Button
+        android:id="@+id/btnModifyGroupDelete"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnModifyGroupSave"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnAdminViewModifyGroupReg"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnAdminViewModifyGroupCr"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

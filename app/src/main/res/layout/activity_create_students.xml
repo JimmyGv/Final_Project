@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_create_students">
+
+    <ImageView
+        android:id="@+id/ivCreateStudLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvUserStudent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Usuario: "
+        app:layout_constraintStart_toStartOf="@id/btnCreateStudentsRegresar"
+        app:layout_constraintTop_toBottomOf="@id/ivCreateStudLogo"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerUser"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/btnCreateStudentsRegresar"
+        app:layout_constraintTop_toBottomOf="@id/ivCreateStudLogo"
+
+        />
+
+    <TextView
+        android:id="@+id/tvUserStudentGrade"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="30dp"
+        android:text="Grado: "
+        app:layout_constraintStart_toStartOf="@id/btnCreateStudentsRegresar"
+        app:layout_constraintTop_toBottomOf="@id/etCurp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerGr"
+        android:layout_width="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/btnCreateStudentsRegresar"
+        app:layout_constraintTop_toBottomOf="@id/etCurp"
+
+        />
+
+    <EditText
+        android:id="@+id/etParent1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserStudent"
+        android:hint="@string/hint_Parent1"
+        android:drawableStart="@drawable/vector_mother"
+        />
+
+    <EditText
+        android:id="@+id/etParent2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etParent1"
+        android:hint="@string/hint_Parent2"
+        android:drawableStart="@drawable/vector_father"
+        />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etParent2"
+        android:hint="@string/hint_Phone"
+        android:drawableStart="@drawable/vector_phone"
+        />
+
+    <EditText
+        android:id="@+id/etPhone2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone"
+        android:hint="@string/hint_Phone2"
+        android:drawableStart="@drawable/vector_phone"
+        />
+
+    <EditText
+        android:id="@+id/etCurp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone2"
+        android:hint="@string/hint_Curp"
+        android:drawableStart="@drawable/vector_curp"
+        />
+
+    <Button
+        android:id="@+id/btnCreateStudentsRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnAgregarStudents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_AgregarDocAl"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

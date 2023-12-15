@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_see_users">
+
+    <ImageView
+        android:id="@+id/ivSeeStudentLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/tvTextSeeStUser"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_enter"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSeeStudentLogo"
+        />
+
+    <TextView
+        android:id="@+id/tvTextSeeUserStHead"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Solicitudes de Registro"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextSeeStUser"
+        />
+
+    <TextView
+        android:id="@+id/tvTextHeadSeeStudent1"
+        android:layout_margin="12dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextSeeUserStHead"
+        />
+
+    <TextView
+        android:id="@+id/tvTextHead2SeeStudent2"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="correo:"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toEndOf="@id/tvTextHeadSeeStudent1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextSeeUserStHead"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAcceptUserName"
+        android:layout_margin="12dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre Solicitante"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listVUsers"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAcceptName"
+        android:layout_margin="12dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre "
+        android:text=""
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listVUsers"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAcceptUserMail"
+        android:layout_margin="12dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Correo Solicitante:"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAcceptUserName"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAcceptMail"
+        android:layout_margin="12dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="correo"
+        android:text=""
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAcceptUserName"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAcceptUserType"
+        android:layout_margin="12dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Tipo Usuario:"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAcceptMail"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAcceptType"
+        android:layout_margin="12dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="admin"
+        android:text=""
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAcceptMail"
+        />
+
+    <ListView
+        android:id="@+id/listVUsers"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextHead2SeeStudent2"
+        />
+
+
+
+    <Button
+        android:id="@+id/buttonSeeStudentRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buttonAcceptSee"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintStart_toStartOf="@id/buttonSeeStudentRegresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buttonAcceptElim"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintEnd_toEndOf="@id/buttonSeeStudentRegresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

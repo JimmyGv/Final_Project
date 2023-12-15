@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_about">
+
+    <ImageView
+        android:id="@+id/ivAboutLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAbout"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Educar para vivir mejor"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAboutLogo"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAboutPhone"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Teléfono: 351-560-8337"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAbout"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAboutSchool"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Domicilio: Calle Central S/N, Colonia Linda Vista, Zamora, Michoacán."
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAboutPhone"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAboutSchoolMision"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Misión: Ofrecer educación secundaria de calidad con equidad y pertinencia en el medio rural, urbano y semiurbano a través de un modelo pedagógico propio y tecnología de vanguardia, atendiendo las necesidades formativas de sus alumnos para un desarrollo integral que les permita continuar con sus estudios."
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAboutSchool"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAboutSchoolVision"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Visión: Ser una opción educativa de excelencia integrada por un equipo de trabajo innovador, comprometido con la mejora continua de una gestión eficaz, formada de individuos con valores y competencias para la vida; con responsabilidad social, que aporten a la comunidad elementos productivos para el desarrollo sustentable acorde a los tiempos actuales."
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAboutSchoolMision"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAboutSchoolValores"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Valores: Responsabilidad, respeto, unidad, espíritu de servicio, compromiso, justicia, legalidad, honestidad, competitividad, trabajo en equipo, solidaridad y transparencia."
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAboutSchoolVision"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAboutSchoolAtencion"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Horario de atención: De 8 A.M. a 2 P.M."
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAboutSchoolValores"
+        />
+
+    <Button
+        android:id="@+id/btnAboutRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

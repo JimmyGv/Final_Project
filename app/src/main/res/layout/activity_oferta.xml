@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_oferta">
+
+    <ImageView
+        android:id="@+id/ivOfferLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTextOffer"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:text="Asignaturas por grado"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivOfferLogo"
+        />
+
+    <TextView
+        android:id="@+id/tvTextOfferGrade"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:text="Primer Año:"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextOffer"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Matematicas"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextOfferGrade"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments1"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Español"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ciencias Naturales"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments1"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments3"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ingles"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments2"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments4"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Geografia"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments3"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments5"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Educacion Fisica"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments4"
+        />
+
+    <TextView
+        android:id="@+id/tvTextOfferGrade1"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:text="Segundo Año:"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments5"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2d"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Matematicas"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextOfferGrade1"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2d1"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Español"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments2d"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2d2"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ciencias Naturales"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments2d1"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2d3"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ingles"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments2d2"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2d4"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Geografia"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments2d3"
+        />
+
+    <TextView
+        android:id="@+id/tvTextAssigments2d5"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Educacion Fisica"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextAssigments2d4"
+        />
+
+    <Button
+        android:id="@+id/buttonOfertaRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

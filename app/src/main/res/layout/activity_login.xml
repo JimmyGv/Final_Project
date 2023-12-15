@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login">
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo"
+        android:hint="@string/hint_usuario"
+        android:drawableStart="@drawable/vector_person1"
+        />
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginUsername"
+        android:drawableStart="@drawable/vector_lock1"
+        />
+
+    <Button
+        android:id="@+id/btnLoginIncioSesion"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/btn_login"
+        />
+
+
+    <Button
+        android:id="@+id/btnAcercade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Acerca de la Institucion"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+    <Button
+        android:id="@+id/btnOferta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Oferta Educativa"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnCreateUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="No tengo una Cuenta"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginBottom="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

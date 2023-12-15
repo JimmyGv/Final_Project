@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_modify_rubro">
+
+    <ImageView
+        android:id="@+id/ivModifyRLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+    <TextView
+        android:id="@+id/tvTModifyRUser"
+        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rubros de Evaluacion"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivModifyRLogo"
+        />
+
+
+    <TextView
+        android:id="@+id/tvModifyR_rubro"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Rubro: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTModifyRUser"
+        />
+
+    <TextView
+        android:id="@+id/tvModifyRMateria"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="12dp"
+        android:text="Trimestre: "
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etModifyRValores"
+        />
+
+    <EditText
+        android:id="@+id/etRubroNuevoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModifyRMateria"
+        android:drawableStart="@drawable/vector_rubro"
+        />
+
+    <EditText
+        android:id="@+id/etModifyRAsist"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerModifyRRubros"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <EditText
+        android:id="@+id/etModifyRTest"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyRClassWork"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <EditText
+        android:id="@+id/etModifyRClassWork"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyRAsist"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <EditText
+        android:id="@+id/etModifyRValores"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_porcentaje"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyRTest"
+        android:drawableStart="@drawable/vector_percent"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModifyRRubros"
+        android:layout_width="180dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTModifyRUser"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModifyRMateria"
+        android:layout_width="180dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etModifyRValores"
+
+        />
+
+    <TextView
+        android:id="@+id/tvModifyRAsistencia"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="25dp"
+        android:text="Porcentaje Asistencia: "
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyR_rubro"
+        />
+
+    <TextView
+        android:id="@+id/tvModifyRTrabajos"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="35dp"
+        android:text="Porcentaje Trabajos: "
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyRAsistencia"
+        />
+
+    <TextView
+        android:id="@+id/tvModifyRExamen"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="40dp"
+        android:text="Porcentaje Examen: "
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyRTrabajos"
+        />
+
+    <TextView
+        android:id="@+id/tvModifyRValores"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="40dp"
+        android:text="Porcentaje Valores: "
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyRExamen"
+        />
+
+    <Button
+        android:id="@+id/btnModifyRSave"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnModifyRDelete"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnModifyReg"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnModifyRCreate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

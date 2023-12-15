@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_modify_teachers">
+
+    <ImageView
+        android:id="@+id/ivModiTeacherLogo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/imagen"
+        />
+
+    <TextView
+        android:id="@+id/tvTextUserModiTeacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_enter"
+        android:layout_margin="12dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivModiTeacherLogo"
+        />
+
+    <TextView
+        android:id="@+id/tvTextFormModiTeacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Formulario para actualizar"
+        android:textSize="24sp"
+        android:layout_margin="12dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextUserModiTeacher"
+        />
+
+    <TextView
+        android:id="@+id/tvModiUsuario"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Usuario: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextFormModiTeacher"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerModi"
+        android:layout_width="180dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTextFormModiTeacher"
+        />
+
+    <EditText
+        android:id="@+id/etSpeciallityModi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModiUsuario"
+        android:hint="@string/hint_especialidad"
+        android:drawableStart="@drawable/vector_additional"
+        />
+
+    <EditText
+        android:id="@+id/etStudiesModi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSpeciallityModi"
+        android:hint="@string/hint_estudios"
+        android:drawableStart="@drawable/vector_studies"
+        />
+
+    <ListView
+        android:id="@+id/listVerDocentes"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStudiesModi"
+
+        />
+
+    <Button
+        android:id="@+id/btnModiTeacherRegresar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/btn_regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnModiTeacherCrear"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnModifyTeacher"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnModifyTeacherDelete"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

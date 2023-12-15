@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".firebase"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_Proyect"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity_modify_users"
+            android:exported="false" />
+        <activity
+            android:name=".activity_see_alumnos"
+            android:exported="false" />
+        <activity
+            android:name=".activity_create_materia"
+            android:exported="false" />
+        <activity
+            android:name=".activity_see_users"
+            android:exported="false" />
+        <activity
+            android:name=".activity_modify_students"
+            android:exported="false" />
+        <activity
+            android:name=".activity_change_password"
+            android:exported="false" />
+        <activity
+            android:name=".activity_modify_materias"
+            android:exported="false" />
+        <activity
+            android:name=".activity_crear_aulas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_aulas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_califi_docente"
+            android:exported="false" />
+        <activity
+            android:name=".activity_modify_group"
+            android:exported="false"
+            android:label="@string/title_activity_modify_group"
+            android:theme="@style/Theme.App_Proyect" />
+        <activity
+            android:name=".activity_modify_rubro"
+            android:exported="false" />
+        <activity
+            android:name=".activity_see_rubros"
+            android:exported="false" />
+        <activity
+            android:name=".activity_alumnos_inscritos"
+            android:exported="false" />
+        <activity
+            android:name=".activity_oferta"
+            android:exported="false" />
+        <activity
+            android:name=".activity_about"
+            android:exported="false" />
+        <activity
+            android:name=".activity_materias_student"
+            android:exported="false" />
+        <activity
+            android:name=".activity_create_group"
+            android:exported="false" />
+        <activity
+            android:name=".activity_modify_teachers"
+            android:exported="false" />
+        <activity
+            android:name=".activity_admin_view"
+            android:exported="false" />
+        <activity
+            android:name=".activity_create_teachers"
+            android:exported="false" />
+        <activity
+            android:name=".activity_create_students"
+            android:exported="false" />
+        <activity
+            android:name=".activity_students_calif"
+            android:exported="false" />
+        <activity
+            android:name=".activity_rubros"
+            android:exported="false" />
+        <activity
+            android:name=".activity_solicitar_registro"
+            android:exported="false" />
+        <activity
+            android:name=".activity_teachers_view"
+            android:exported="false" />
+        <activity
+            android:name=".activity_students_view"
+            android:exported="false" />
+        <activity
+            android:name=".activity_login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
